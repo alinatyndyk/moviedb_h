@@ -1,8 +1,19 @@
 .header{
     height: 100px;
-    background-color: #282c34;
-    color: lightskyblue;
+    background-color: black;
+    color: white;
     display: flex;
-    justify-content: center;
+    box-sizing: border-box;
+    padding-left: 50px;
     align-items: center;
+    column-gap: 1200px;
+}
+
+.header_navigation{
+    display: flex;
+    column-gap: 20px;
+}
+
+.header-navigation-link{
+    color: white;
 }

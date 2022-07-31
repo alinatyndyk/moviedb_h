@@ -1,17 +1,16 @@
 import React from 'react';
 
-const Movie = ({movie:{original_title, overview, poster_path}}) => {
-    const imagePath = 'https://image.tmdb.org/t/p/w500'
+import css from './Movie.css'
+
+const Movie = ({movie:{original_title, poster_path}}) => {
+    const imagePath = 'https://image.tmdb.org/t/p/w300'
     return (
-        <div>
+        <div className={'movie-card'}>
             <h2>
-            original_title: {original_title}
+            {original_title}
             </h2>
+                <img className={'movie_poster'} src={`${imagePath}${poster_path}`} alt=""/>
             <div>
-            overview: {overview}
-            </div>
-            <div>
-                <img src={`${imagePath}${poster_path}`} alt=""/>
             </div>
         </div>
     );
