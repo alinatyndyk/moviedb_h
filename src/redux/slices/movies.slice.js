@@ -26,6 +26,7 @@ const initialState ={
                 const {page, results} = action.payload;
                 state.page = page
                 state.movies = results
+                console.log(results)
             })
      }
 })

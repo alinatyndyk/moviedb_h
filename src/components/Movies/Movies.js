@@ -12,7 +12,7 @@ const Movies = () => {
 
     useEffect(()=>{
         dispatch(moviesActions.getAll())
-    })
+    },[moviesActions])
     return (
         <div className={'movies'}>
             {movies.map(movie => <Movie key={movie.id} movie={movie}/>)}

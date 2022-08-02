@@ -1,0 +1,9 @@
+.genres{
+    background-color: black;
+    color: white;
+    display:grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 30px;
+
+}

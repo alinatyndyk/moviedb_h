@@ -1,5 +1,6 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 import {genresService} from "../../services";
+import genre from "../../components/Genre/Genre";
 
 
 const initialState = {
@@ -22,8 +23,9 @@ const genresSlice = createSlice({
     extraReducers:(builder) =>{
         builder
             .addCase(getAll.fulfilled, (state, action)=>{
-                state.genres = action.payload
-                console.log(action.payload)
+                const {genres} = action.payload
+                state.genres = genres
+                console.log(genres)
             })
     }
 })
