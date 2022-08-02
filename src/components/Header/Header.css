@@ -1,3 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+
+.header_logo{
+    font-family: 'Kanit', sans-serif;
+    font-size: 35px;
+}
+
 .header{
     height: 60px;
     background-color: black;
@@ -9,11 +17,7 @@
     column-gap: 1200px;
 }
 
-.header_navigation{
-    display: flex;
-    column-gap: 20px;
-}
-
-.header-navigation-link{
-    color: white;
+.header_nav{
+    color: aqua;
+    margin-right: 300px;
 }
