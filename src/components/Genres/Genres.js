@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import {genresActions} from "../../redux";
 import Genre from "../Genre/Genre";
@@ -8,14 +8,17 @@ const Genres = () => {
     const {genres} = useSelector(state => state.genres);
     const dispatch = useDispatch()
 
-    useEffect(()=>{
+    useEffect(() => {
         dispatch(genresActions.getAll())
-    },[genresActions])
+    }, [genresActions])
 
 
     return (
-        <div className={'genres'}>
-            {genres.map(genre => <Genre key={genre.id} genre={genre}/>)}
+        <div>
+            <div className={'genres'}>
+                {genres.map(genre => <Genre key={genre.id} genre={genre}/>)}
+            </div>
+
         </div>
     );
 };

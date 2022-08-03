@@ -1,0 +1,15 @@
+
+
+.genre{
+    background-color: black;
+    color: white;
+    display:grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border-bottom: grey solid 1px;
+}
+
+.genre-item-img{
+    border-radius: 9px;
+
+}
