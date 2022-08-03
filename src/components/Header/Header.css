@@ -15,9 +15,6 @@
     padding-left: 50px;
     align-items: center;
     column-gap: 1200px;
+    border-bottom: solid grey 1px;
 }
 
-.header_nav{
-    color: aqua;
-    margin-right: 300px;
-}

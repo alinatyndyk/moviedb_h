@@ -12,6 +12,7 @@ const Genres = () => {
         dispatch(genresActions.getAll())
     },[genresActions])
 
+
     return (
         <div className={'genres'}>
             {genres.map(genre => <Genre key={genre.id} genre={genre}/>)}

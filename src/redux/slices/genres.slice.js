@@ -4,25 +4,27 @@ import genre from "../../components/Genre/Genre";
 
 
 const initialState = {
-    genres: []
+    genres: [],
 }
 
 
 const getAll = createAsyncThunk(
     'genresSlice/getAll',
-    async ()=>{
+    async () => {
         const {data} = await genresService.getAll()
         return data
     }
 )
 
+
+
 const genresSlice = createSlice({
     name: 'genresSlice',
     initialState,
-    reducers:{},
-    extraReducers:(builder) =>{
+    reducers: {},
+    extraReducers: (builder) => {
         builder
-            .addCase(getAll.fulfilled, (state, action)=>{
+            .addCase(getAll.fulfilled, (state, action) => {
                 const {genres} = action.payload
                 state.genres = genres
                 console.log(genres)
@@ -36,7 +38,7 @@ const genresActions = {
     getAll
 }
 
-export{
+export {
     genresReducer,
     genresActions
 }

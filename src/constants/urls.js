@@ -6,8 +6,13 @@ const urls = {
     genres: '/genre/movie/list'
 }
 
+const filters = {
+    genreFilter: '&with_genres='
+}
+
 export{
     baseURL,
     urls,
+    filters,
     API_KEY
 }

@@ -10,9 +10,6 @@ const Header = () => {
             <div className={'header_logo'}>
                 Filmix
             </div>
-            <div className={'header_nav'}>
-                    hsbdljbcjjjj
-            </div>
         </div>
     );
 };
