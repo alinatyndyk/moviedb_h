@@ -1,8 +1,8 @@
 
 import css from './Movie.css'
 import {useEffect, useState} from "react";
-import {Link, Navigate, useNavigate} from "react-router-dom";
-import MovieItemPage from "../../pages/MovieItemPage/MovieItemPage";
+import {Link} from "react-router-dom";
+
 
 const Movie = ({movie: {id,overview,original_title, poster_path, popularity}}) => {
     const imagePath = 'https://image.tmdb.org/t/p/w200'
