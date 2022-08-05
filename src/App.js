@@ -3,6 +3,7 @@ import {Navigate, Route, Routes} from "react-router-dom";
 import MainLayout from "./layouts/MainLayout/MainLayout";
 import MoviesPage from "./pages/MoviesPage/MoviesPage";
 import GenrePage from "./pages/GenrePage/GenrePage";
+import MovieItemPage from "./pages/MovieItemPage/MovieItemPage";
 
 function App() {
   return (

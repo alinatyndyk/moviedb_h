@@ -15,7 +15,6 @@ const Genre = ({genre}) => {
                 setId(value.results)
             })
     }, [])
-    console.log(getId)
 
     return (
         <div>
